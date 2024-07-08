@@ -8,10 +8,10 @@ import json
 def react_scraping(input_url):    
     chromedriver_path = "C:\\Program Files\\ChromeDriver\\chromedriver.exe"
 
-    service = Service(executable_path=chromedriver_path)
+    # service = Service(executable_path=chromedriver_path)
 
     # Initialize the WebDriver with the specified path
-    driver = webdriver.Chrome(service=service)
+    driver = webdriver.Chrome()
 
     # Open a webpage
     driver.get(input_url)
